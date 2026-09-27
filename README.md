@@ -1,12 +1,12 @@
 # Week_7
 Task: Build a "normal vs anomalous" pipeline using an autoencoder's reconstruction. Segmentation, Measurement &amp; Anomaly Detection.
 
-To perform these tasks, we require a platform to label the dataset or to use an available COCO model dataset.
+- To perform these tasks, we require a platform to label the dataset or to use an available COCO model dataset.
 
-Link to Ultralytics Platform for training and Labeling:
+- Link to Ultralytics Platform for training and Labeling:
   https://platform.ultralytics.com/home
 
-On this platform, you can annotate and use the labeled dataset to train any YOLO model.
+- On this platform, you can annotate and use the labeled dataset to train any YOLO model.
 Steps:
   1. Upload the dataset images by creating a New Dataset option.
   2. Choose the Annotate option in the left taskbar. Fill the required fields like dataset name, task type, and visibility public or private. Upload all your images, then click Create Dataset.
@@ -45,17 +45,29 @@ Steps:
   9. Steps in Anaconda Prompt Window:
     1. Search for Anaconda Prompt on your PC
     2. In the Anaconda Prompt, create an environment by running the command:
+     ```
      > create --name yolo_env1 python=3.12
+     ```
     3. Then activate the environment and follow the commands:
+     ```
      > conda activate yolo_env1
+     ```
     4. In the Anaconda prompt window, set the path where the my_model folder is available.
     5. After setting the correct path, install the library
+     ```
      > pip install ultralytics
+     ```
     6. Use this link https://pytorch.org/get-started/locally/ for video nvidia GPU. Run this command:
+     ```
      > pip3 install --upgrade torch torchvision --index-url https://download.pytorch.org/whl/cu132
+     ```
     7. Then run the command:
+     ```
      > python yolo_segment.py --model=metal_defect.pt --source=<file_name>
+     ```
     8. You can keep any <file_name> as per the provided above images and video file.
      To run the live video for detection run the command as:
+     ```
      > python yolo_segment.py --model=metal_defect.pt --source=usb0
+     ```
  
