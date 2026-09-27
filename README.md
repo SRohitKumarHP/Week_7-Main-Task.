@@ -43,30 +43,30 @@ Steps:
   7.2. Download the files from this GitHub to the place where you save the 'metal_defect.pt' file.
   8. Download Anaconda onto your PC. Download the suitable one that supports your operating system.
   9. Steps in Anaconda Prompt Window:
-    1. Search for Anaconda Prompt on your PC
-    2. In the Anaconda Prompt, create an environment by running the command:
+- Search for Anaconda Prompt on your PC
+- In the Anaconda Prompt, create an environment by running the command:
      ```
      > create --name yolo_env1 python=3.12
      ```
-    3. Then activate the environment and follow the commands:
+- Then activate the environment and follow the commands:
      ```
      > conda activate yolo_env1
      ```
-    4. In the Anaconda prompt window, set the path where the my_model folder is available.
+- In the Anaconda prompt window, set the path where the my_model folder is available.
     5. After setting the correct path, install the library
      ```
      > pip install ultralytics
      ```
-    6. Use this link https://pytorch.org/get-started/locally/ for video nvidia GPU. Run this command:
+- Use this link https://pytorch.org/get-started/locally/ for video nvidia GPU. Run this command:
      ```
      > pip3 install --upgrade torch torchvision --index-url https://download.pytorch.org/whl/cu132
      ```
-    7. Then run the command:
+- Then run the command:
      ```
      > python yolo_segment.py --model=metal_defect.pt --source=<file_name>
      ```
-    8. You can keep any <file_name> as per the provided above images and video file.
-     To run the live video for detection run the command as:
+- You can keep any <file_name> as per the provided above images and video file.
+- To run the live video for detection, run the command as:
      ```
      > python yolo_segment.py --model=metal_defect.pt --source=usb0
      ```
